@@ -1,0 +1,37 @@
+body {
+    background-color: #84898f !important;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    
+    background: url('https://i.ibb.co/tmBvzGx/Design-sem-nome.png') no-repeat center center; /* Adiciona a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    padding: 60px 0; /* Espaçamento interno do cabeçalho */
+    color: white; /* Muda a cor do texto para branco para melhor contraste */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-icon img {
+    width: 100%;
+    height: auto;
+}
+
+
+.text-center{
+    color: white;
+}
+.imagem1{
+    align-items: left;
+    
+}
