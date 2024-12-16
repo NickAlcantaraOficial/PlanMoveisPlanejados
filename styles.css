@@ -4,16 +4,47 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Navbar */
+.navbar {
+    background-color: #343a40; /* Cor escura para a navbar */
+    padding: 0.5rem 1rem; /* Ajusta o padding */
+    height: 60px; /* Ajusta a altura da navbar */
+}
+
+.navbar-brand img {
+    width: 180px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção */
+}
+
+.navbar-nav .nav-link {
+    color: white !important; /* Garante que o texto dos links seja branco */
+    font-size: 1.1rem; /* Ajusta o tamanho da fonte */
+    padding: 10px 15px; /* Ajusta o espaçamento dos links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa !important; /* Cor de hover mais clara */
+}
+
+/* Hero Section */
 .hero {
-    
-    background: url('https://i.ibb.co/tmBvzGx/Design-sem-nome.png') no-repeat center center; /* Adiciona a imagem de fundo */
+    background: url('https://i.ibb.co/tmBvzGx/Design-sem-nome.png') no-repeat center center;
     background-size: cover; /* Faz a imagem cobrir toda a área */
     padding: 60px 0; /* Espaçamento interno do cabeçalho */
     color: white; /* Muda a cor do texto para branco para melhor contraste */
     text-align: center; /* Centraliza o texto dentro do cabeçalho */
-
 }
 
+.hero h1 {
+    font-size: 3rem; /* Tamanho maior para o título */
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.0rem;
+}
+
+/* WhatsApp Icon */
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;
@@ -27,11 +58,151 @@ body {
     height: auto;
 }
 
+/* Sobre */
+#sobre {
+    padding: 40px 0;
+}
+ 
+#sobre h2 {
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+}
 
-.text-center{
+#sobre p {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+/* Galeria */
+/* Estilo para a seção de Galeria */
+/* Galeria */
+#galeria {
+    padding: 50px 20px; /* Adiciona padding ao redor para evitar que as imagens toquem as bordas */
+    background-color: #f8f9fa;
+}
+
+#galeria h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.galeria-container {
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0; /* Garante que a galeria tenha espaço em cima e embaixo */
+}
+
+.galeria-container .item {
+    flex: 0 0 auto; /* Impede que os itens se encolham */
+    width: 250px; /* Ajuste a largura conforme necessário */
+    height: 300px; /* Ajuste a altura conforme necessário */
+}
+
+.galeria-container .item img {
+    width: 100%; /* Assegura que a imagem ocupe 100% da largura do item */
+    height: 100%; /* Assegura que a imagem ocupe 100% da altura do item */
+    object-fit: cover; /* Faz com que a imagem preencha o espaço sem distorcer */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria-container .item img:hover {
+    transform: scale(1.05); /* Efeito de zoom nas imagens ao passar o mouse */
+}
+
+/* Contato */
+#contato {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #343a40;
     color: white;
 }
-.imagem1{
+
+#contato h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#contato p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Ícone do WhatsApp fixo na lateral inferior direita */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    background-color: #128c7e;
+}
+
+.whatsapp-icon i {
+    color: white;
+}
+
+/* Ícone do Instagram abaixo do texto de Contato */
+.instagram-icon {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 10px; /* Espaçamento entre o texto e o ícone */
+    color: #d6249f; /* Cor padrão do Instagram */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.instagram-icon:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    color: white; /* Cor mais escura no hover */
+}
+
+
+/* Estilo dos Ícones Sociais */
+.facebook-icon {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    color: #1877f2; /* Cor dos ícones */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.facebook-icon:hover {
+    color: white; /* Cor azul do Facebook ao passar o mouse */
+    transform: scale(1.2); /* Efeito de leve aumento */
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Ajustes para textos centralizados */
+.text-center {
+    color: white;
+}
+
+/* Imagem do logo */
+.imagem1 {
     align-items: left;
-    
 }
