@@ -11,19 +11,24 @@
 <body class="test">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img class="imagem1" src="https://i.ibb.co/mcrTG33/logo1-removebg-preview.png" alt="Logo" width="150" src></a>
+            <a class="navbar-brand" href="#">
+                <img class="imagem1" src="https://i.ibb.co/mcrTG33/logo1-removebg-preview.png" alt="Logo" width="150">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Início</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#loja">Loja</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#galeria">Galeria</a>
@@ -35,6 +40,7 @@
             </div>
         </div>
     </nav>
+    
 
     <!-- Hero Section -->
     <header class="hero">
@@ -53,33 +59,57 @@
     </section>
 
     <!-- Galeria -->
-    <section id="galeria" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center">Galeria de Produtos</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/300" class="img-fluid" alt="Produto 1">
-                </div>
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/300" class="img-fluid" alt="Produto 2">
-                </div>
-                <div class="col-md-4">
-                    <img src="https://i.ibb.co/G5x6SDB/logo-2.png" class="img-fluid" alt="Produto 3">
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="galeria">
+        <h2>Nossos Serviços</h2>
+        <div class="galeria-container">
+          <div class="item">
+            <img src="https://i.ibb.co/23kN7LX/armariodecozinha.png" alt="Produto 1">
+          </div>
+          <div class="item">
+            <img src="https://i.ibb.co/F8Q1XHJ/produto2.png" alt="Produto 2">
+          </div>
+          <div class="item">
+            <img src="https://i.ibb.co/4S7Pd0F/produto1.png" alt="Produto 3">
+          </div>
+          <div class="item">
+            <img src="https://i.ibb.co/DQX6KfZ/produto3.png" alt="Produto 4">
+          </div>
+          <div class="item">
+            <img src="https://i.ibb.co/4JWSXTp/produto4.png" alt="Produto 5">
+          </div>
+          <div class="item">
+            <img src="https://i.ibb.co/hFJRzgJ/Captura-de-tela-2024-12-09-131021.png" alt="Produto 6">
+          </div>
+          <div class="item">
+            <img src="https://i.ibb.co/pLzVDRX/produto7.png" alt="Produto 7">
+          </div>
+          <div class="item">
+            <img src="https://i.ibb.co/b1wvdD5/produto8.png" alt="Produto 8">
+          </div>
+          <!-- Adicione mais itens conforme necessário -->
+      </section>
+      
+   <!-- Contato -->
+<section id="contato" class="py-5">
+    <div class="container text-center">
+        <h2>Contato</h2>
+        <p>Faça seu orçamento via WhatsApp ou entre em contato pelas nossas redes sociais:</p>
+        <!-- Instagram Icon -->
+        <a href="https://www.instagram.com/iplanmoveisplanejados/" target="_blank" class="facebook-icon">
+            <i class="fab fa-instagram fa-3x"></i>
+        </a>
+        <a href="https://www.facebook.com/search/top?q=iplan%20m%C3%B3veis%20planejados" target="_blank" class="facebook-icon">
+            <i class="fab fa-facebook fa-3x"></i>
+        </a>
+    </div>
+    
+</section>
 
-    <!-- Contato -->
-    <section id="contato" class="py-5">
-        <div class="container text-center">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco pelo WhatsApp:</p>
-            <a href="https://api.whatsapp.com/send?phone=5561991883332" target="_blank" class="whatsapp-icon">
-                <i class="fab fa-whatsapp fa-3x"></i>
-            </a>
-        </div>
-    </section>
+<!-- WhatsApp Icon -->
+<a href="https://api.whatsapp.com/send?phone=5561991883332" target="_blank" class="whatsapp-icon">
+    <i class="fab fa-whatsapp fa-3x"></i>
+</a>
+
 
     <!-- Rodapé -->
     <footer class="text-center py-4">
