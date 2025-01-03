@@ -1,0 +1,94 @@
+/* cadastro.css */
+
+/* Estilos globais */
+body {
+    background-color: #84898f;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center; /* Alinha o conteúdo ao centro */
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 200px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Título */
+h2 {
+    color: #343a40;
+    font-size: 24px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+/* Inputs */
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botão */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #343a40;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6c757d;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .logo {
+        max-width: 60px; /* Ajuste o tamanho conforme necessário */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
