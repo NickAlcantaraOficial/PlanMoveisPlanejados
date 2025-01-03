@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plan Móveis Planejados</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="cadastro.html">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body class="test">
 
-    <!-- Navbar -->
+    <!-- BARRA DE NAVEGAÇÃO -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -25,22 +27,52 @@
                         <a class="nav-link active" href="#">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#loja">Loja</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#galeria">Galeria</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contato">Contato</a>
                     </li>
+                    <!-- Botão de Login atualizado com ícone -->
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light ml-2" data-toggle="modal" data-target="#loginModal">
+                            <i class="fa fa-user"></i> Login
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary ml-2" href="cadastro.html">não tem Login? faça seu cadastro</a>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
     </nav>
     
+    <!-- Modal de Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <input type="password" class="form-control" id="password" placeholder="Digite sua senha" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <header class="hero">
@@ -58,7 +90,7 @@
         </div>
     </section>
 
-    <!-- Galeria -->
+    <!-- nossos serviços -->
     <section id="galeria">
         <h2>Nossos Serviços</h2>
         <div class="galeria-container">
@@ -86,30 +118,28 @@
           <div class="item">
             <img src="https://i.ibb.co/b1wvdD5/produto8.png" alt="Produto 8">
           </div>
-          <!-- Adicione mais itens conforme necessário -->
       </section>
       
-   <!-- Contato -->
-<section id="contato" class="py-5">
-    <div class="container text-center">
-        <h2>Contato</h2>
-        <p>Faça seu orçamento via WhatsApp ou entre em contato pelas nossas redes sociais:</p>
-        <!-- Instagram Icon -->
-        <a href="https://www.instagram.com/iplanmoveisplanejados/" target="_blank" class="facebook-icon">
-            <i class="fab fa-instagram fa-3x"></i>
-        </a>
-        <a href="https://www.facebook.com/search/top?q=iplan%20m%C3%B3veis%20planejados" target="_blank" class="facebook-icon">
-            <i class="fab fa-facebook fa-3x"></i>
-        </a>
-    </div>
-    
-</section>
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+        <div class="container text-center">
+            <h2>Contato</h2>
+            <p>Faça seu orçamento via WhatsApp ou entre em contato pelas nossas redes sociais:</p>
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/iplanmoveisplanejados/" target="_blank" class="facebook-icon">
+                <i class="fab fa-instagram fa-3x"></i>
+            </a>
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com/search/top?q=iplan%20m%C3%B3veis%20planejados" target="_blank" class="facebook-icon">
+                <i class="fab fa-facebook fa-3x"></i>
+            </a>
+        </div>
+    </section>
 
-<!-- WhatsApp Icon -->
-<a href="https://api.whatsapp.com/send?phone=5561991883332" target="_blank" class="whatsapp-icon">
-    <i class="fab fa-whatsapp fa-3x"></i>
-</a>
-
+    <!-- WhatsApp Icon -->
+    <a href="https://api.whatsapp.com/send?phone=5561991883332" target="_blank" class="whatsapp-icon">
+        <i class="fab fa-whatsapp fa-3x"></i>
+    </a>
 
     <!-- Rodapé -->
     <footer class="text-center py-4">
@@ -119,5 +149,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
