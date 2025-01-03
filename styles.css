@@ -26,6 +26,21 @@ body {
     color: #f8f9fa !important; /* Cor de hover mais clara */
 }
 
+.navbar .btn {
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.navbar .btn-primary {
+    background-color: gray; /* Cor de fundo do botão de login */
+    border: none;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #eeeeee; /* Cor de fundo ao passar o mouse */
+}
+
 /* Hero Section */
 .hero {
     background: url('https://i.ibb.co/tmBvzGx/Design-sem-nome.png') no-repeat center center;
@@ -51,18 +66,27 @@ body {
     right: 20px;
     width: 60px;
     height: 60px;
+    background-color: #25d366; /* Cor de fundo do ícone do WhatsApp */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
 }
 
-.whatsapp-icon img {
-    width: 100%;
-    height: auto;
+.whatsapp-icon:hover {
+    background-color: #128c7e; /* Cor de fundo ao passar o mouse */
+}
+
+.whatsapp-icon i {
+    color: white; /* Cor do ícone */
 }
 
 /* Sobre */
 #sobre {
-    padding: 40px 0;
+    padding: 40px 0; /* Espaçamento interno da seção */
 }
- 
+
 #sobre h2 {
     font-size: 2.0rem;
     margin-bottom: 20px;
@@ -74,8 +98,6 @@ body {
     text-align: center;
 }
 
-/* Galeria */
-/* Estilo para a seção de Galeria */
 /* Galeria */
 #galeria {
     padding: 50px 20px; /* Adiciona padding ao redor para evitar que as imagens toquem as bordas */
@@ -90,7 +112,7 @@ body {
 
 .galeria-container {
     display: flex;
-    justify-content: flex-start; /* Alinha à esquerda */
+    justify-content: space-between; /* Alinha à esquerda */
     gap: 20px;
     overflow-x: auto;
     padding: 10px 0; /* Garante que a galeria tenha espaço em cima e embaixo */
@@ -140,7 +162,7 @@ body {
     right: 20px;
     width: 60px;
     height: 60px;
-    background-color: #25d366;
+    background-color: #25d366; /* Cor de fundo do ícone do WhatsApp */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -149,11 +171,11 @@ body {
 }
 
 .whatsapp-icon:hover {
-    background-color: #128c7e;
+    background-color: #128c7e; /* Cor de fundo ao passar o mouse */
 }
 
 .whatsapp-icon i {
-    color: white;
+    color: white; /* Cor do ícone */
 }
 
 /* Ícone do Instagram abaixo do texto de Contato */
@@ -170,7 +192,6 @@ body {
     color: white; /* Cor mais escura no hover */
 }
 
-
 /* Estilo dos Ícones Sociais */
 .facebook-icon {
     margin: 0 10px; /* Espaçamento entre os ícones */
@@ -182,7 +203,6 @@ body {
     color: white; /* Cor azul do Facebook ao passar o mouse */
     transform: scale(1.2); /* Efeito de leve aumento */
 }
-
 
 /* Rodapé */
 footer {
