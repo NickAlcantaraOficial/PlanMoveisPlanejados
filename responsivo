@@ -1,0 +1,150 @@
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+        max-height: 50vh;
+        object-fit: cover;
+    }
+
+    /* Ajuste do texto sobre a imagem */
+    .carousel-caption {
+        font-size: 1.5rem; /* Reduz o tamanho do texto */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra no texto */
+    }
+
+    /* Filtro de escurecimento para melhorar o contraste */
+    .carousel-item img {
+        filter: brightness(50%); /* Escurece a imagem */
+    }
+
+    /* Ajustes gerais de layout para mobile */
+    header, .carousel-caption {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    body {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    /* Navbar */
+    .navbar-toggler {
+        border: none;
+        background-color: transparent;
+    }
+
+    .navbar-collapse {
+        /* Exibe o menu em formato de lista vertical */
+        background-color: #343a40; /* Cor de fundo */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        display: block;
+        padding: 15px 0;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav li {
+        margin: 10px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .hero-image {
+        background-size: cover;
+        background-position: center;
+        height: 50vh; /* Reduz a altura da imagem */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+
+    .hero-text {
+        background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com transparência */
+        padding: 10px 15px; /* Espaçamento interno */
+        border-radius: 8px; /* Borda arredondada */
+    }
+
+    .hero-text h1 {
+        font-size: 2rem; /* Reduz o tamanho do título */
+        margin: 0 10px;
+    }
+
+    .hero-text p {
+        font-size: 1rem; /* Reduz o tamanho do parágrafo */
+    }
+
+    /* Ajustes adicionais para centralização */
+    .section {
+        padding: 20px;
+    }
+
+    /* Galeria */
+    .galeria-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Uma coluna */
+        gap: 15px;
+    }
+
+    .galeria-container img {
+        width: 100%; /* Ajusta a largura da imagem */
+        height: auto;
+    }
+
+    /* Contato */
+    #contato {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #contato .icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Formulário */
+    #formulario {
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    #formulario input,
+    #formulario textarea {
+        width: 100%; /* Ocupa toda a largura */
+        margin-bottom: 10px;
+    }
+
+    #formulario button {
+        width: 100%; /* Botão grande para toque */
+        padding: 10px;
+    }
+}
