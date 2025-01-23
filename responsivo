@@ -1,161 +1,144 @@
-/* Para telas menores que 768px */
+/* Estilos específicos para telas menores que 768px */
 @media (max-width: 768px) {
+    /* Estilo para o menu dropdown (navbar-collapse) */
     .navbar-collapse {
-        background-color: #343a40; 
-        position: absolute;
-        top: 55px;
+        background-color: #343a40; /* Fundo escuro, como na imagem enviada */
+        position: absolute; /* Fixa a posição da navbar */
+        top: 70px; /* Define o espaço entre o topo da tela e o menu */
         left: 0;
         right: 0;
-        padding: 15px 0;
+        padding: 15px 0; /* Espaçamento interno no menu */
     }
 
+    /* Centralização dos itens no menu (navbar-nav) */
     .navbar-nav {
-        text-align: center;
+        text-align: center; /* Centraliza os links do menu */
     }
 
+    /* Estilo para cada item do menu */
     .navbar-nav li {
-        margin: 10px 0;
+        margin: 10px 0; /* Espaçamento entre os itens */
     }
 
+    /* Estilo para a barra de navegação principal */
     .navbar {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Alinha os elementos em coluna */
+        align-items: center; /* Centraliza os elementos horizontalmente */
     }
 
+    /* Estilo para os links dentro da navbar */
     .navbar a {
-        font-size: 16px;
-        padding: 10px 0;
+        font-size: 16px; /* Tamanho do texto nos links */
+        padding: 10px 0; /* Espaçamento interno nos links */
+        color: #ffffff; /* Garante que o texto seja branco */
     }
 
+    /* Estilo para botões adicionais na navbar */
     .navbar .btn {
-        margin-left: auto;
-        font-size: 1rem;
-        padding: 10px 20px;
+        margin-left: auto; /* Empurra o botão para a extremidade */
+        font-size: 1rem; /* Tamanho do texto */
+        padding: 10px 20px; /* Espaçamento interno do botão */
     }
-    
+
+    /* Remove bordas do ícone de menu (navbar-toggler) */
     .navbar-toggler {
-        border: none;
-        background-color: transparent;
+        border: none; /* Remove bordas externas */
+        background-color: transparent; /* Remove o fundo */
     }
 
-    .navbar-collapse {
-        background-color: #343a40; 
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        padding: 15px 0;
-    }
-
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .navbar-nav li {
-        margin: 10px 0;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar a {
-        font-size: 16px;
-        padding: 10px 0;
-    }
-
-    .navbar .btn {
-        margin-left: auto;
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
-
-    /* Hero Section */
+    /* Seção Hero (ajustes no responsivo) */
     .hero {
-        background-size: cover;
-        background-position: center;
-        height: auto; 
-        padding: 60px;
-        text-align: center;
+        background-size: cover; /* Cobre toda a área disponível */
+        background-position: center; /* Centraliza a imagem */
+        height: auto; /* Altura automática */
+        padding: 60px; /* Espaçamento interno */
+        text-align: center; /* Centraliza o conteúdo */
     }
 
+    /* Títulos da seção Hero */
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Tamanho do título */
     }
 
+    /* Texto descritivo da seção Hero */
     .hero p {
-        font-size: 1rem;
+        font-size: 1rem; /* Tamanho do texto */
     }
 
-    /* Galeria */
+    /* Galeria de imagens (comportamento responsivo) */
     .galeria-container {
         display: grid;
-        grid-template-columns: 1fr; 
-        gap: 15px;
+        grid-template-columns: 1fr; /* Uma coluna no mobile */
+        gap: 15px; /* Espaçamento entre os itens */
     }
 
     .galeria-container img {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Largura máxima para responsividade */
+        height: auto; /* Altura proporcional */
     }
 
-    /* Contato */
+    /* Estilo para a seção de Contato */
     #contato {
-        padding: 20px 0;
-        text-align: center;
+        padding: 20px 0; /* Espaçamento interno */
+        text-align: center; /* Centraliza o conteúdo */
     }
 
+    /* Ícones na seção de contato */
     #contato .icons {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
+        display: flex; /* Alinha os ícones horizontalmente */
+        justify-content: center; /* Centraliza os ícones */
+        gap: 15px; /* Espaçamento entre os ícones */
     }
 
-    /* Formulário */
+    /* Formulário de contato */
     #formulario {
-        width: 100%;
-        margin: 0 auto;
-        padding: 15px;
+        width: 100%; /* Ocupa toda a largura disponível */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        padding: 15px; /* Espaçamento interno */
     }
 
+    /* Campos do formulário */
     #formulario input,
     #formulario textarea {
-        width: 100%; 
-        margin-bottom: 10px;
+        width: 100%; /* Largura máxima */
+        margin-bottom: 10px; /* Espaçamento entre os campos */
     }
 
+    /* Botão do formulário */
     #formulario button {
-        width: 100%; 
-        padding: 10px;
+        width: 100%; /* Largura máxima */
+        padding: 10px; /* Espaçamento interno */
     }
-    /* Estilo para a galeria horizontal */
-.galeria-container {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 15px;
-    padding: 10px 0;
-}
 
-.galeria-container .item {
-    flex: 0 0 auto;
-    width: 250px;
-    height: 300px;
-    scroll-snap-align: start;
-}
+    /* Galeria horizontal no modo responsivo */
+    .galeria-container {
+        display: flex; /* Alinha os itens horizontalmente */
+        overflow-x: auto; /* Permite rolagem horizontal */
+        scroll-snap-type: x mandatory; /* Rola automaticamente para os itens */
+        gap: 15px; /* Espaçamento entre os itens */
+        padding: 10px 0; /* Espaçamento interno */
+    }
 
-.galeria-container .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
+    /* Itens individuais na galeria */
+    .galeria-container .item {
+        flex: 0 0 auto; /* Não deixa os itens se redimensionarem */
+        width: 250px; /* Largura fixa dos itens */
+        height: 300px; /* Altura fixa dos itens */
+        scroll-snap-align: start; /* Alinha ao início na rolagem */
+    }
 
-.galeria-container .item img:hover {
-    transform: scale(1.05);
-}
+    /* Imagens na galeria */
+    .galeria-container .item img {
+        width: 100%; /* Ocupa toda a largura do item */
+        height: 100%; /* Ocupa toda a altura do item */
+        object-fit: cover; /* Recorta a imagem proporcionalmente */
+        border-radius: 10px; /* Borda arredondada */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+        transition: transform 0.3s ease; /* Transição suave no hover */
+    }
 
+    /* Efeito de zoom ao passar o mouse na imagem */
+    .galeria-container .item img:hover {
+        transform: scale(1.05); /* Aumenta levemente o tamanho da imagem */
+    }
 }
