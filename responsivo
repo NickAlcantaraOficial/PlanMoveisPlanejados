@@ -12,7 +12,9 @@
 
     /* Centralização dos itens no menu (navbar-nav) */
     .navbar-nav {
+        background-color: #343a40; /* Fundo escuro, como na imagem enviada */
         text-align: center; /* Centraliza os links do menu */
+        position: absolute;
     }
 
     /* Estilo para cada item do menu */
@@ -30,6 +32,7 @@
         margin-right: 0; /* Remove a margem direita */
         flex-direction: column; /* Alinha os elementos em coluna */
         align-items: center; /* Centraliza os elementos horizontalmente */
+        text-align: center;
     }
 
     .navbar-collapse {
