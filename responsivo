@@ -5,7 +5,7 @@
         background-color: #343a40; /* Fundo escuro, como na imagem enviada */
         position: absolute; /* Fixa a posição da navbar */
         top: 70px; /* Define o espaço entre o topo da tela e o menu */
-        left: 0;
+        left: 0;   
         right: 0;
         padding: 15px 0; /* Espaçamento interno no menu */
     }
@@ -21,30 +21,46 @@
     }
 
     /* Estilo para a barra de navegação principal */
+    /* Para telas menores que 768px */
+@media (max-width: 768px) {
     .navbar {
+        background-color: #343a40; /* Cor de fundo da navbar */
+        padding: 0.5rem 1rem; /* Padding para ajustar o espaço interno */
+        height: 55px; /* Altura da navbar */
+        margin-right: 0; /* Remove a margem direita */
         flex-direction: column; /* Alinha os elementos em coluna */
         align-items: center; /* Centraliza os elementos horizontalmente */
     }
 
-    /* Estilo para os links dentro da navbar */
+    .navbar-collapse {
+        background-color: #343a40; 
+        position: absolute;
+        top: 55px;
+        left: 0;
+        right: 0;
+        padding: 15px 0;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav li {
+        margin: 10px 0;
+    }
+
     .navbar a {
-        font-size: 16px; /* Tamanho do texto nos links */
-        padding: 10px 0; /* Espaçamento interno nos links */
-        color: #ffffff; /* Garante que o texto seja branco */
+        font-size: 16px;
+        padding: 10px 0;
+        color: white; /* Cor do texto */
+        text-decoration: none; /* Remove sublinhado */
     }
 
-    /* Estilo para botões adicionais na navbar */
-    .navbar .btn {
-        margin-left: auto; /* Empurra o botão para a extremidade */
-        font-size: 1rem; /* Tamanho do texto */
-        padding: 10px 20px; /* Espaçamento interno do botão */
-    }
-
-    /* Remove bordas do ícone de menu (navbar-toggler) */
     .navbar-toggler {
-        border: none; /* Remove bordas externas */
-        background-color: transparent; /* Remove o fundo */
+        border: none;
+        background-color: transparent;
     }
+}
 
     /* Seção Hero (ajustes no responsivo) */
     .hero {
