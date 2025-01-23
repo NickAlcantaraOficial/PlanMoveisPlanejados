@@ -1,58 +1,11 @@
 /* Para telas menores que 768px */
 @media (max-width: 768px) {
-
-    .img-fluid {
-        width: 100%;
-        height: auto;
-        max-height: 50vh;
-        object-fit: cover;
-    }
-
-    /* Ajuste do texto sobre a imagem */
-    .carousel-caption {
-        font-size: 1.5rem; /* Reduz o tamanho do texto */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra no texto */
-    }
-
-    /* Filtro de escurecimento para melhorar o contraste */
-    .carousel-item img {
-        filter: brightness(50%); /* Escurece a imagem */
-    }
-
-    /* Ajustes gerais de layout para mobile */
-    header, .carousel-caption {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .btn {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
-
-    .container {
-        padding: 15px;
-    }
-
-    body {
-        font-size: 14px;
-        padding: 0 10px;
-    }
-
-    /* Navbar */
-    .navbar-toggler {
-        border: none;
-        background-color: transparent;
-    }
-
     .navbar-collapse {
-        /* Exibe o menu em formato de lista vertical */
-        background-color: #343a40; /* Cor de fundo */
+        background-color: #343a40; 
         position: absolute;
-        top: 70px;
+        top: 55px;
         left: 0;
         right: 0;
-        display: block;
         padding: 15px 0;
     }
 
@@ -67,7 +20,6 @@
     .navbar {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 
     .navbar a {
@@ -75,46 +27,76 @@
         padding: 10px 0;
     }
 
-    .hero-image {
+    .navbar .btn {
+        margin-left: auto;
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    
+    .navbar-toggler {
+        border: none;
+        background-color: transparent;
+    }
+
+    .navbar-collapse {
+        background-color: #343a40; 
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 15px 0;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav li {
+        margin: 10px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .navbar .btn {
+        margin-left: auto;
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* Hero Section */
+    .hero {
         background-size: cover;
         background-position: center;
-        height: 50vh; /* Reduz a altura da imagem */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: auto; 
+        padding: 60px;
         text-align: center;
-        color: #000000;
     }
 
-    .hero-text {
-        background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com transparência */
-        padding: 10px 15px; /* Espaçamento interno */
-        border-radius: 8px; /* Borda arredondada */
+    .hero h1 {
+        font-size: 2rem;
     }
 
-    .hero-text h1 {
-        font-size: 2rem; /* Reduz o tamanho do título */
-        margin: 0 10px;
-    }
-
-    .hero-text p {
-        font-size: 1rem; /* Reduz o tamanho do parágrafo */
-    }
-
-    /* Ajustes adicionais para centralização */
-    .section {
-        padding: 20px;
+    .hero p {
+        font-size: 1rem;
     }
 
     /* Galeria */
     .galeria-container {
         display: grid;
-        grid-template-columns: 1fr; /* Uma coluna */
+        grid-template-columns: 1fr; 
         gap: 15px;
     }
 
     .galeria-container img {
-        width: 100%; /* Ajusta a largura da imagem */
+        width: 100%;
         height: auto;
     }
 
@@ -139,12 +121,41 @@
 
     #formulario input,
     #formulario textarea {
-        width: 100%; /* Ocupa toda a largura */
+        width: 100%; 
         margin-bottom: 10px;
     }
 
     #formulario button {
-        width: 100%; /* Botão grande para toque */
+        width: 100%; 
         padding: 10px;
     }
+    /* Estilo para a galeria horizontal */
+.galeria-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.galeria-container .item {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 300px;
+    scroll-snap-align: start;
+}
+
+.galeria-container .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.galeria-container .item img:hover {
+    transform: scale(1.05);
+}
+
 }
