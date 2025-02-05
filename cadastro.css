@@ -1,6 +1,13 @@
-/* cadastro.css */
+:root {
+    --primary-color: #343a40;
+    --secondary-color: #f8f9fa;
+    --accent-color: #007bff;
+    --text-color: white;
+    --button-color: #343a40;
+    --hover-color: #6c757d;
+}
 
-/* Estilos globais */
+/* Corpo da página */
 body {
     background-color: #84898f;
     margin: 0;
@@ -13,7 +20,7 @@ body {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
@@ -28,7 +35,7 @@ body {
 
 /* Título */
 h2 {
-    color: #343a40;
+    color: var(--primary-color);
     font-size: 24px;
 }
 
@@ -41,8 +48,8 @@ form {
 /* Labels */
 label {
     margin-bottom: 5px;
-    color: #343a40;
-    text-align: left; /* Alinha os labels à esquerda */
+    color: var(--primary-color);
+    text-align: left;
 }
 
 /* Inputs */
@@ -52,29 +59,29 @@ input {
     border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 16px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra interna para os inputs */
-    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animação suave */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 input:focus {
-    border-color: #007bff; /* Cor da borda ao focar no input */
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Sombra ao focar no input */
+    border-color: var(--accent-color);
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
 }
 
 /* Botão */
-button {
+button, .btn {
     padding: 12px;
     border: none;
     border-radius: 5px;
-    background-color: #343a40;
-    color: white;
+    background-color: var(--button-color);
+    color: var(--text-color);
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #6c757d;
+button:hover, .btn:hover {
+    background-color: var(--hover-color);
 }
 
 /* Media Queries para dispositivos móveis */
