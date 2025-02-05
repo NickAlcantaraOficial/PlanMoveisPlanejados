@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="processa_login.php" method="POST">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit" class="botao">Entrar</button>
+        </form>
+        <p>Não tem uma conta? <a href="cadastro.html" class="link">Cadastre-se</a></p>
+
+        <div id="g_id_onload"
+             data-client_id="YOUR_CLIENT_ID"
+             data-login_uri="http://localhost:YOUR_PORT/callback"
+             data-auto_prompt="false">
+        </div>
+
+        <div class="g_id_signin"
+             data-type="standard"
+             data-shape="rectangular"
+             data-theme="outline"
+             data-text="sign_in_with"
+             data-size="large"
+             data-logo_alignment="left">
+        </div>
+    </div>
+</body>
+</html>
