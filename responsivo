@@ -1,42 +1,7 @@
 /* Estilos específicos para telas menores que 768px */
 @media (max-width: 768px) {
-    /* Estilo para o menu dropdown (navbar-collapse) */
     .navbar-collapse {
-        background-color: #343a40; /* Fundo escuro, como na imagem enviada */
-        position: absolute; /* Fixa a posição da navbar */
-        top: 70px; /* Define o espaço entre o topo da tela e o menu */
-        left: 0;   
-        right: 0;
-        padding: 15px 0; /* Espaçamento interno no menu */
-    }
-
-    /* Centralização dos itens no menu (navbar-nav) */
-    .navbar-nav {
-        background-color: #343a40; /* Fundo escuro, como na imagem enviada */
-        text-align: center; /* Centraliza os links do menu */
-        position: absolute;
-    }
-
-    /* Estilo para cada item do menu */
-    .navbar-nav li {
-        margin: 10px 0; /* Espaçamento entre os itens */
-    }
-
-    /* Estilo para a barra de navegação principal */
-    /* Para telas menores que 768px */
-@media (max-width: 768px) {
-    .navbar {
-        background-color: #343a40; /* Cor de fundo da navbar */
-        padding: 0.5rem 1rem; /* Padding para ajustar o espaço interno */
-        height: 55px; /* Altura da navbar */
-        margin-right: 0; /* Remove a margem direita */
-        flex-direction: column; /* Alinha os elementos em coluna */
-        align-items: center; /* Centraliza os elementos horizontalmente */
-        text-align: center;
-    }
-
-    .navbar-collapse {
-        background-color: #343a40; 
+        background-color: var(--primary-color); 
         position: absolute;
         top: 55px;
         left: 0;
@@ -55,109 +20,95 @@
     .navbar a {
         font-size: 16px;
         padding: 10px 0;
-        color: white; /* Cor do texto */
-        text-decoration: none; /* Remove sublinhado */
+        color: white;
+        text-decoration: none;
     }
 
     .navbar-toggler {
         border: none;
         background-color: transparent;
     }
-}
 
-    /* Seção Hero (ajustes no responsivo) */
     .hero {
-        background-size: cover; /* Cobre toda a área disponível */
-        background-position: center; /* Centraliza a imagem */
-        height: auto; /* Altura automática */
-        padding: 60px; /* Espaçamento interno */
-        text-align: center; /* Centraliza o conteúdo */
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        padding: 60px;
+        text-align: center;
     }
 
-    /* Títulos da seção Hero */
     .hero h1 {
-        font-size: 2rem; /* Tamanho do título */
+        font-size: 2rem;
     }
 
-    /* Texto descritivo da seção Hero */
     .hero p {
-        font-size: 1rem; /* Tamanho do texto */
+        font-size: 1rem;
     }
 
-    /* Galeria de imagens (comportamento responsivo) */
     .galeria-container {
         display: grid;
-        grid-template-columns: 1fr; /* Uma coluna no mobile */
-        gap: 15px; /* Espaçamento entre os itens */
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .galeria-container img {
-        width: 100%; /* Largura máxima para responsividade */
-        height: auto; /* Altura proporcional */
+        width: 100%;
+        height: auto;
     }
 
-    /* Estilo para a seção de Contato */
     #contato {
-        padding: 20px 0; /* Espaçamento interno */
-        text-align: center; /* Centraliza o conteúdo */
+        padding: 20px 0;
+        text-align: center;
     }
 
-    /* Ícones na seção de contato */
     #contato .icons {
-        display: flex; /* Alinha os ícones horizontalmente */
-        justify-content: center; /* Centraliza os ícones */
-        gap: 15px; /* Espaçamento entre os ícones */
+        display: flex;
+        justify-content: center;
+        gap: 15px;
     }
 
-    /* Formulário de contato */
     #formulario {
-        width: 100%; /* Ocupa toda a largura disponível */
-        margin: 0 auto; /* Centraliza horizontalmente */
-        padding: 15px; /* Espaçamento interno */
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
     }
 
-    /* Campos do formulário */
     #formulario input,
     #formulario textarea {
-        width: 100%; /* Largura máxima */
-        margin-bottom: 10px; /* Espaçamento entre os campos */
+        width: 100%;
+        margin-bottom: 10px;
     }
 
-    /* Botão do formulário */
     #formulario button {
-        width: 100%; /* Largura máxima */
-        padding: 10px; /* Espaçamento interno */
+        width: 100%;
+        padding: 10px;
     }
 
-    /* Galeria horizontal no modo responsivo */
     .galeria-container {
-        display: flex; /* Alinha os itens horizontalmente */
-        overflow-x: auto; /* Permite rolagem horizontal */
-        scroll-snap-type: x mandatory; /* Rola automaticamente para os itens */
-        gap: 15px; /* Espaçamento entre os itens */
-        padding: 10px 0; /* Espaçamento interno */
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 15px;
+        padding: 10px 0;
     }
 
-    /* Itens individuais na galeria */
     .galeria-container .item {
-        flex: 0 0 auto; /* Não deixa os itens se redimensionarem */
-        width: 250px; /* Largura fixa dos itens */
-        height: 300px; /* Altura fixa dos itens */
-        scroll-snap-align: start; /* Alinha ao início na rolagem */
+        flex: 0 0 auto;
+        width: 250px;
+        height: 300px;
+        scroll-snap-align: start;
     }
 
-    /* Imagens na galeria */
     .galeria-container .item img {
-        width: 100%; /* Ocupa toda a largura do item */
-        height: 100%; /* Ocupa toda a altura do item */
-        object-fit: cover; /* Recorta a imagem proporcionalmente */
-        border-radius: 10px; /* Borda arredondada */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-        transition: transform 0.3s ease; /* Transição suave no hover */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
     }
 
-    /* Efeito de zoom ao passar o mouse na imagem */
     .galeria-container .item img:hover {
-        transform: scale(1.05); /* Aumenta levemente o tamanho da imagem */
+        transform: scale(1.05);
     }
 }
