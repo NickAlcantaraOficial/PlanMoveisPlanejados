@@ -12,23 +12,28 @@
         <h2>Cadastre-se</h2>
         
         <form action="processa_cadastro.php" method="POST">
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="data_nascimento">Data de Nascimento:</label>
-            <input type="date" id="data_nascimento" name="data_nascimento">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="telefone">Telefone/celular:</label>
-            <input type="tel" id="telefone" name="telefone" required>
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
-            <button type="button" onclick="window.location.href='index.html';">Voltar</button>
+            <label for="nome" id="label-nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required aria-labelledby="label-nome">
+            
+            <label for="data_nascimento" id="label-data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" aria-labelledby="label-data_nascimento">
+            
+            <label for="email" id="label-email">E-mail:</label>
+            <input type="email" id="email" name="email" required aria-labelledby="label-email">
+            
+            <label for="telefone" id="label-telefone">Telefone/celular:</label>
+            <input type="tel" id="telefone" name="telefone" required aria-labelledby="label-telefone">
+            
+            <label for="senha" id="label-senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required aria-labelledby="label-senha">
+            
+            <label for="confirma_senha" id="label-confirma_senha">Confirme a Senha:</label>
+            <input type="password" id="confirma_senha" name="confirma_senha" required aria-labelledby="label-confirma_senha">
+            
+            <a href="index.html" class="btn">Voltar</a>
             <br />
             <button type="submit">Cadastrar</button>
-            
-            
         </form>
     </div>
 </body>
 </html>
-
