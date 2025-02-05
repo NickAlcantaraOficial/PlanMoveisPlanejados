@@ -1,16 +1,27 @@
+:root {
+    --primary-color: #343a40;
+    --secondary-color: #f8f9fa;
+    --accent-color: #007bff;
+    --text-color: white;
+    --button-color: gray;
+    --hover-color: #eeeeee;
+    --whatsapp-color: #25d366;
+    --whatsapp-hover-color: #128c7e;
+}
+
+/* Corpo da página */
 body {
-    background-color: #84898f !important;
+    background-color: var(--primary-color) !important;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Navbar */
+/* Barra de navegação */
 .navbar {
-    background-color: #343a40;
+    background-color: var(--primary-color);
     padding: 0.5rem 1rem;
-    height: 55px;
+    height: 60px;
     margin-right: 0;
-    
 }
 
 .navbar-brand img {
@@ -21,15 +32,15 @@ body {
 .navbar-nav {
     margin-left: auto;
 }
+
 .navbar-nav .nav-link {
-    color: white !important;
+    color: var(--text-color) !important;
     font-size: 1.1rem;
     padding: 10px 15px;
-
 }
 
 .navbar-nav .nav-link:hover {
-    color: #f8f9fa !important;
+    color: var(--hover-color) !important;
 }
 
 .navbar .btn {
@@ -39,251 +50,243 @@ body {
 }
 
 .navbar .btn-primary {
-    background-color: gray;
+    background-color: var(--button-color);
     border: none;
-    border-radius: 50%; /* Torna o botão circular */
-    width: 50px; /* Tamanho do botão */
-    height: 50px; /* Tamanho do botão */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     margin-left: 15px;
-    right: 20px; /* Ajuste a distância do lado direito */
-    top: 5px; /* Ajuste a distância do topo */
-    display: flex; /* Centraliza o conteúdo dentro do botão */
+    right: 20px;
+    top: 5px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .navbar .btn-primary:hover {
-    background-color: #eeeeee;
+    background-color: var(--hover-color);
 }
 
 
-/* Hero Section */
+/* Seção Hero (Imagem de fundo com texto de destaque) */
 .hero {
-    background: url('https://i.ibb.co/tmBvzGx/Design-sem-nome.png') no-repeat center center;
-    background-size: cover;
-    padding: 60px 0;
-    color: white;
-    text-align: center;
+    background: url('https://i.ibb.co/tmBvzGx/Design-sem-nome.png') no-repeat center center; /* Imagem de fundo da seção */
+    background-size: cover; /* A imagem de fundo cobre toda a área */
+    padding: 60px 0; /* Espaçamento interno */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto no centro */
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
+    font-size: 3rem; /* Tamanho do título */
+    margin-bottom: 15px; /* Margem inferior */
 }
 
 .hero p {
-    font-size: 1rem;
+    font-size: 1rem; /* Tamanho do parágrafo */
 }
 
-/* WhatsApp Icon */
+/* Ícone do WhatsApp */
 .whatsapp-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background-color: #25d366;
-    border-radius: 50%;
-    display: flex;
+    position: fixed; /* Fixa o ícone na tela */
+    bottom: 20px; /* Posiciona 20px acima do fundo */
+    right: 20px; /* Posiciona 20px à direita */
+    width: 60px; /* Largura do ícone */
+    height: 60px; /* Altura do ícone */
+    background-color: #25d366; /* Cor de fundo do ícone */
+    border-radius: 50%; /* Torna o ícone circular */
+    display: flex; /* Usado para centralizar o conteúdo dentro do ícone */
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
 }
 
 .whatsapp-icon:hover {
-    background-color: #128c7e;
+    background-color: #128c7e; /* Cor ao passar o mouse sobre o ícone */
 }
 
 .whatsapp-icon i {
-    color: white;
+    color: white; /* Cor do ícone */
 }
 
-/* Sobre */
+/* Seção Sobre */
 #sobre {
-    padding: 40px 0;
-    border: none;
+    padding: 40px 0; /* Espaçamento interno da seção */
+    border: none; /* Remove bordas */
 }
 
 #sobre h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2rem; /* Tamanho do título */
+    margin-bottom: 20px; /* Margem inferior */
 }
 
 #sobre p {
-    font-size: 1.2rem;
-    color: white;
-    text-align: center;
+    font-size: 1.2rem; /* Tamanho do parágrafo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
 }
 
-/* Galeria */
+/* Seção Galeria */
 #galeria {
-    padding: 50px 20px;
-    background-color: #f8f9fa;
+    padding: 50px 20px; /* Espaçamento interno da seção */
+    background-color: #f8f9fa; /* Cor de fundo */
 }
 
 #galeria h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    text-align: center;
+    font-size: 2.5rem; /* Tamanho do título */
+    margin-bottom: 30px; /* Margem inferior */
+    text-align: center; /* Alinha o título ao centro */
 }
 
 .galeria-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 10px 0;
+    display: flex; /* Usa o modelo flexbox */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+    padding: 10px 0; /* Espaçamento interno */
 }
 
 .galeria-container .item {
-    flex: 0 0 auto;
-    width: 250px;
-    height: 300px;
+    flex: 0 0 auto; /* Impede o item de crescer ou encolher */
+    width: 250px; /* Largura dos itens */
+    height: 300px; /* Altura dos itens */
 }
 
 .galeria-container .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    width: 100%; /* A imagem ocupa toda a largura do item */
+    height: 100%; /* A imagem ocupa toda a altura do item */
+    object-fit: cover; /* Ajusta a imagem sem distorcê-la */
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra nas imagens */
+    transition: transform 0.3s ease; /* Transição suave no efeito de hover */
 }
 
 .galeria-container .item img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
 }
 
-/* Contato */
+/* Seção Contato */
 #contato {
-    padding: 20px 0;
-    text-align: center;
-    background-color: #343a40;
-    color: white;
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Alinha o texto ao centro */
+    background-color: #343a40; /* Cor de fundo */
+    color: white; /* Cor do texto */
 }
 
 #contato h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 2rem; /* Tamanho do título */
+    margin-bottom: 10px; /* Margem inferior */
 }
 
 #contato p {
-    font-size: 1rem;
-    margin-bottom: 15px;
+    font-size: 1rem; /* Tamanho do parágrafo */
+    margin-bottom: 15px; /* Margem inferior */
 }
-
 
 /* Ícone do Instagram abaixo do texto de Contato */
 .instagram-icon {
-    display: inline-block;
-    text-decoration: none;
-    margin-top: 10px;
-    color: #d6249f;
-    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block; /* Exibe como bloco em linha */
+    text-decoration: none; /* Remove o sublinhado */
+    margin-top: 10px; /* Margem superior */
+    color: #d6249f; /* Cor do ícone */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave */
 }
 
 .instagram-icon:hover {
-    transform: scale(1.1);
-    color: white;
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+    color: white; /* Muda a cor ao passar o mouse */
 }
 
 /* Estilo dos Ícones Sociais */
 .facebook-icon {
-    margin: 0 10px;
-    color: #1877f2;
-    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 0 10px; /* Margem entre os ícones */
+    color: #1877f2; /* Cor do ícone */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transição suave */
 }
 
 .facebook-icon:hover {
-    color: white;
-    transform: scale(1.2);
+    color: white; /* Cor ao passar o mouse */
+    transform: scale(1.2); /* Efeito de aumento */
 }
 
 /* Rodapé */
 footer {
-    text-align: center;
-    background-color: #343a40;
-    color: white;
-    padding: 20px 0;
+    text-align: center; /* Alinha o texto ao centro */
+    background-color: #343a40; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
 }
 
 footer p {
-    margin: 0;
-    font-size: 1rem;
+    margin: 0; /* Remove a margem */
+    font-size: 1rem; /* Tamanho da fonte */
 }
 
 /* Ajustes para textos centralizados */
 .text-center {
-    color: white;
-}
-
-/* Imagem do logo */
-.imagem1 {
-    align-items: left;
+    color: white; /* Cor do texto */
 }
 
 /* Modal */
 .modal-content {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor do modal */
 }
 
 .modal-header {
-    border-bottom: none;
+    border-bottom: none; /* Remove a borda inferior */
 }
 
 .modal-title {
-    font-weight: bold;
-    color: #343a40;
+    font-weight: bold; /* Título em negrito */
+    color: #343a40; /* Cor do título */
 }
 
 .modal-body {
-    padding: 2rem;
+    padding: 2rem; /* Espaçamento interno do corpo do modal */
 }
 
 .form-group label {
-    font-weight: bold;
-    color: #343a40;
+    font-weight: bold; /* Rótulo em negrito */
+    color: #343a40; /* Cor do rótulo */
 }
 
 .form-group input {
-    border-radius: 5px;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #343a40;
-    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 5px; /* Borda arredondada */
+    padding: 0.75rem; /* Padding nos campos de entrada */
+    margin-bottom: 1rem; /* Margem inferior */
+    border: 1px solid #343a40; /* Borda do campo */
+    transition: box-shadow 0.3s ease-in-out; /* Transição suave no foco */
 }
 
 .form-group input:focus {
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Efeito de sombra ao focar no campo */
 }
 
 /* Ajustar links de ações */
 .forgot-password {
-    display: block;
-    text-align: center;
-    margin-top: 1rem;
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    display: block; /* Exibe como bloco */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: 1rem; /* Margem superior */
+    color: #007bff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease; /* Transição suave */
 }
 
 .forgot-password:hover {
-    color: #0056b3;
+    color: #0056b3; /* Cor ao passar o mouse */
 }
 
 p {
-    text-align: center;
+    text-align: center; /* Alinha o parágrafo ao centro */
 }
 
 p a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #007bff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease; /* Transição suave */
 }
 
 p a:hover {
-    color: #0056b3;
+    color: #0056b3; /* Cor ao passar o mouse */
 }
-
-    
